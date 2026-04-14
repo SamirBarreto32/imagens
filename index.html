@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Health | Jornalismo & Tecnologia</title>
+    <style>
+        /* Estética Aero Glass do Windows Vista */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .aero-window {
+            width: 94%;
+            height: 88vh;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-bar {
+            height: 35px;
+            background: linear-gradient(to bottom, rgba(74, 144, 226, 0.6), rgba(30, 70, 150, 0.8));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            color: white;
+            font-size: 13px;
+            text-shadow: 0 1px 2px #000;
+        }
+
+        .content-area {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.9);
+            color: #2c3e50;
+        }
+
+        /* Estilo Jornalístico */
+        .journal-header { border-bottom: 3px double #333; margin-bottom: 30px; text-align: center; }
+        .journal-header h1 { font-family: 'Times New Roman', serif; font-size: 3em; margin: 10px 0; }
+        
+        .article-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+        .main-article h2 { color: #005a9e; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+        
+        .img-caption { font-size: 0.85em; color: #666; font-style: italic; margin-top: 5px; text-align: center; }
+        .hero-img { width: 100%; border: 1px solid #ddd; padding: 5px; background: #fff; }
+
+        /* Barra de Tarefas Vista */
+        .taskbar {
+            height: 45px;
+            background: linear-gradient(to bottom, #111, #000);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            justify-content: space-between;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .orb {
+            width: 38px; height: 38px;
+            background: radial-gradient(circle, #4faaff, #005a9e);
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 15px #4faaff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="aero-window">
+    <div class="title-bar">
+        <span>NEXUS NEWS - Edição Especial de 14 de Abril</span>
+        <div style="background: #e81123; width: 30px; height: 18px; border-radius: 2px;"></div>
+    </div>
+
+    <div class="content-area">
+        <div class="journal-header">
+            <h1>NEXUS HEALTH CHRONICLE</h1>
+            <p><strong>TECNOLOGIA E DIGNIDADE EM UM SÓ LUGAR</strong> | SÃO PAULO, 14 DE ABRIL DE 2026</p>
+        </div>
+
+        <div class="article-grid">
+            <div class="main-article">
+                <h2>Saúde Mental: A Nova Fronteira da IA</h2>
+                <img src="doutor.jpg" class="hero-img" alt="Dr. Nexus">
+                <p class="img-caption">Dr. Kumar lidera a iniciativa Nexus Core para diagnósticos preditivos[cite: 2].</p>
+                
+                <p>A aprendizagem é o processo pelo qual competências e habilidades são adquiridas ou modificadas através do estudo e da observação. Na Nexus Health, aplicamos esse conceito à nossa "Matriz de Aprendizagem" (NEXUS CORE v40) para analisar funções mentais fundamentais.</p>
+                
+                <blockquote>"A IA não apenas processa, ela aprende a cuidar" - Dr. Kumar[cite: 2].</blockquote>
+            </div>
+
+            <div class="side-bar">
+                <h3>Dignidade Urbana</h3>
+                <img src="canteiro.jpg" class="hero-img" alt="Reurbanização">
+                <p class="img-caption">Obras de infraestrutura promovem sanidade ambiental[cite: 4].</p>
+                
+                <img src="conjunto.jpg" class="hero-img" alt="Moradia">
+                <p class="img-caption">Conjuntos habitacionais modernos: o fim do caos urbano[cite: 5].</p>
+                
+                <hr>
+                <img src="rosto.jpg" style="width: 60px; border-radius: 50%; display: block; margin: 0 auto;">
+                <p style="text-align: center;"><small>Coluna de Samir Barreto [cite: 6]</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="taskbar">
+    <div class="orb"></div>
+    <div><strong>15:50</strong><br>14/04/2026</div>
+</footer>
+
+</body>
+</html>
